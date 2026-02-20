@@ -1,16 +1,122 @@
-# React + Vite
+# 🎬 Movie Explorer
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern React application that lets you search, explore, and save your favorite movies using the **OMDb API**.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Live Demo
 
-## React Compiler
+> Coming soon / Deploy link here
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## ✨ Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- 🔍 **Search Movies** — Search any movie by title using the OMDb API
+- 🎥 **Movie Details** — View detailed info like plot, cast, ratings, genre, and release year
+- ❤️ **Favorites** — Save and manage your favorite movies (stored in localStorage)
+- 📱 **Responsive Design** — Works seamlessly on all screen sizes
+- 🧭 **Multi-page Navigation** — Smooth routing with React Router DOM
+
+---
+
+## 🛠️ Tech Stack
+
+| Technology | Purpose |
+|---|---|
+| React 19 | UI Framework |
+| Vite | Build Tool & Dev Server |
+| React Router DOM v7 | Client-side Routing |
+| OMDb API | Movie Data Source |
+| CSS Modules | Styling |
+
+---
+
+## 📁 Project Structure
+
+```
+movie-explorer/
+├── public/
+├── src/
+│   ├── components/
+│   │   ├── Navbar.jsx       # Navigation bar
+│   │   ├── Navbar.css
+│   │   ├── MovieCard.jsx    # Movie card component
+│   │   └── MovieCard.css
+│   ├── pages/
+│   │   ├── Home.jsx         # Search & browse movies
+│   │   ├── Home.css
+│   │   ├── MovieDetails.jsx # Detailed movie view
+│   │   ├── MovieDetails.css
+│   │   ├── Favorites.jsx    # Saved favorites
+│   │   ├── Favorites.css
+│   │   ├── About.jsx        # About page
+│   │   └── About.css
+│   ├── App.jsx
+│   ├── App.css
+│   ├── main.jsx
+│   └── index.css
+├── index.html
+├── package.json
+└── vite.config.js
+```
+
+---
+
+## ⚙️ Getting Started
+
+### Prerequisites
+
+- Node.js (v18 or above)
+- npm
+
+### Installation
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/Ammar-Meman/Movie-Explorer.git
+   cd Movie-Explorer
+   ```
+
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
+
+3. **Get your free OMDb API key**
+   - Visit [https://www.omdbapi.com/apikey.aspx](https://www.omdbapi.com/apikey.aspx) and sign up for a free key.
+
+4. **Add your API key**
+   - Open `src/pages/Home.jsx` and `src/pages/MovieDetails.jsx`
+   - Replace the existing API key with your own:
+     ```js
+     const API_KEY = "your_api_key_here";
+     ```
+
+5. **Start the development server**
+   ```bash
+   npm run dev
+   ```
+
+6. Open [http://localhost:5173](http://localhost:5173) in your browser.
+
+---
+
+## 📦 Build for Production
+
+```bash
+npm run build
+```
+
+---
+
+## 📄 License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+---
+
+## 🙋‍♂️ Author
+
+**Ammar Meman**  
+GitHub: [@Ammar-Meman](https://github.com/Ammar-Meman)
