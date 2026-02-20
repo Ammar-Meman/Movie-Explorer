@@ -1,0 +1,57 @@
+/* --------- Favorites Page --------- */
+.favorites-page {
+  padding-bottom: 40px;
+}
+
+.favorites-page h1 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #f0f0f0;
+  margin-bottom: 6px;
+}
+
+.favorites-page h1 span {
+  color: #e63946;
+}
+
+.favorites-subtitle {
+  color: #666;
+  font-size: 0.85rem;
+  margin-bottom: 24px;
+}
+
+/* Empty state */
+.no-favorites {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 50vh;
+  text-align: center;
+  gap: 12px;
+}
+
+.no-favorites .empty-icon {
+  font-size: 4rem;
+  opacity: 0.25;
+}
+
+.no-favorites p {
+  color: #666;
+  font-size: 1rem;
+}
+
+.no-favorites a {
+  margin-top: 8px;
+  padding: 9px 20px;
+  background: #e63946;
+  color: #fff;
+  border-radius: 8px;
+  font-size: 0.88rem;
+  font-weight: 600;
+  transition: background 0.2s;
+}
+
+.no-favorites a:hover {
+  background: #c62b37;
+}

@@ -1,0 +1,188 @@
+/* --------- Movie Details Page --------- */
+.movie-details-page {
+    padding-bottom: 40px;
+}
+
+.back-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 16px;
+    background: #13131f;
+    border: 1px solid #333350;
+    border-radius: 6px;
+    color: #aaa;
+    font-size: 0.85rem;
+    font-weight: 500;
+    margin-bottom: 24px;
+    cursor: pointer;
+    transition: color 0.2s, border-color 0.2s;
+}
+
+.back-btn:hover {
+    color: #fff;
+    border-color: #555;
+}
+
+/* Two column layout */
+.movie-details-container {
+    display: flex;
+    gap: 36px;
+    align-items: flex-start;
+}
+
+.movie-details-poster {
+    flex-shrink: 0;
+    width: 260px;
+}
+
+.movie-details-poster img {
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid #222235;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+}
+
+.movie-details-info h1 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #f0f0f0;
+    line-height: 1.2;
+    margin-bottom: 12px;
+}
+
+/* Year / Rated / Runtime pills */
+.movie-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 14px;
+}
+
+.meta-pill {
+    padding: 4px 12px;
+    background: #1e1e34;
+    border: 1px solid #333350;
+    border-radius: 20px;
+    color: #aaa;
+    font-size: 0.8rem;
+}
+
+/* Genre tags */
+.movie-genres {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 18px;
+}
+
+.genre-tag {
+    padding: 4px 12px;
+    background: rgba(230, 57, 70, 0.12);
+    border: 1px solid rgba(230, 57, 70, 0.35);
+    border-radius: 20px;
+    color: #e63946;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+/* IMDb rating */
+.rating-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: #1e1e34;
+    border: 1px solid #333350;
+    border-radius: 8px;
+    padding: 6px 14px;
+    color: #f5c518;
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 18px;
+}
+
+.rating-label {
+    font-size: 0.75rem;
+    color: #666;
+    font-weight: 400;
+}
+
+/* Plot */
+.movie-plot {
+    color: #b0b0c0;
+    font-size: 0.92rem;
+    line-height: 1.75;
+    margin-bottom: 18px;
+    padding-bottom: 18px;
+    border-bottom: 1px solid #1e1e34;
+}
+
+/* Info rows */
+.movie-facts {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 24px;
+}
+
+.movie-facts p {
+    font-size: 0.88rem;
+    color: #999;
+}
+
+.movie-facts strong {
+    color: #ddd;
+    font-weight: 600;
+    margin-right: 6px;
+}
+
+/* Add to favorites button on details page */
+.add-fav-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 22px;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.15s;
+    border: none;
+}
+
+.add-fav-btn.add {
+    background: #e63946;
+    color: #fff;
+}
+
+.add-fav-btn.add:hover {
+    background: #c62b37;
+}
+
+.add-fav-btn.remove {
+    background: transparent;
+    border: 1px solid #e63946;
+    color: #e63946;
+}
+
+.add-fav-btn.remove:hover {
+    background: rgba(230, 57, 70, 0.1);
+}
+
+/* Responsive */
+@media (max-width: 680px) {
+    .movie-details-container {
+        flex-direction: column;
+    }
+
+    .movie-details-poster {
+        width: 100%;
+        max-width: 260px;
+        margin: 0 auto;
+    }
+
+    .movie-details-info h1 {
+        font-size: 1.4rem;
+    }
+}

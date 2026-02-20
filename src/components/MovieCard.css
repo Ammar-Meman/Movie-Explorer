@@ -1,0 +1,111 @@
+/* --------- Movie Card --------- */
+.movie-card {
+    background-color: #13131f;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid #222235;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.movie-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.movie-poster {
+    overflow: hidden;
+    aspect-ratio: 2 / 3;
+}
+
+.movie-poster img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+
+.movie-card:hover .movie-poster img {
+    transform: scale(1.05);
+}
+
+.movie-info {
+    padding: 14px 16px 16px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.movie-info h3 {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #f0f0f0;
+    margin-bottom: 4px;
+    /* clamp to 2 lines */
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    line-height: 1.4;
+}
+
+.movie-year {
+    color: #777;
+    font-size: 0.82rem;
+    margin-bottom: 12px;
+}
+
+.movie-actions {
+    display: flex;
+    gap: 8px;
+    margin-top: auto;
+}
+
+.details-btn {
+    flex: 1;
+    text-align: center;
+    padding: 7px 10px;
+    background-color: #1e1e34;
+    border: 1px solid #333355;
+    border-radius: 6px;
+    color: #ccc;
+    font-size: 0.8rem;
+    font-weight: 500;
+    transition: background 0.2s, color 0.2s;
+}
+
+.details-btn:hover {
+    background-color: #28284a;
+    color: #fff;
+}
+
+.favorite-btn {
+    flex: 1;
+    padding: 7px 10px;
+    border-radius: 6px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    border: none;
+    transition: background 0.2s, transform 0.15s;
+}
+
+.favorite-btn.add {
+    background-color: #e63946;
+    color: #fff;
+}
+
+.favorite-btn.add:hover {
+    background-color: #c62b37;
+}
+
+.favorite-btn.remove {
+    background-color: transparent;
+    border: 1px solid #e63946;
+    color: #e63946;
+}
+
+.favorite-btn.remove:hover {
+    background-color: rgba(230, 57, 70, 0.1);
+}
